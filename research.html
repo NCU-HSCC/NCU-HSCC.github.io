@@ -46,7 +46,7 @@
 						</header>
 						<div class="features-row">
 							<section>
-								<button type="button" style="background-color: #ffffff; border: none;" class="" data-toggle="modal" data-target="#FiveG"><span class="icon major fa-wifi accent4"></span></button>
+								<button type="button" style="background-color: #ffffff; border: none;" class="" data-toggle="modal" data-target="#FiveG"><span class="icon major fa-wifi accent1"></span></button>
 								<br><br><h3>5th Generation Mobile Networks</h3>
 								<p></p>
 							</section>
@@ -58,12 +58,12 @@
 						</div>
 						<div class="features-row">
 							<section>
-								<button type="button" style="background-color: #ffffff; border: none;" class="" data-toggle="modal" data-target="#Satellite"><span class="icon major fa-rocket accent5"></span></button>
+								<button type="button" style="background-color: #ffffff; border: none;" class="" data-toggle="modal" data-target="#Satellite"><span class="icon major fa-rocket accent3"></span></button>
 								<br><br><h3>Satellite Networks</h3>
 								<p></p>
 							</section>							
 							<section>
-								<button type="button" style="background-color: #ffffff; border: none;" class="" data-toggle="modal" data-target="#Others"><span class="icon major fa-cloud accent1"></span></button>
+								<button type="button" style="background-color: #ffffff; border: none;" class="" data-toggle="modal" data-target="#Others"><span class="icon major fa-cloud accent4"></span></button>
 								<br><br><h3>Other Network Technologies</h3>
 								<p></p>
 							</section>
@@ -74,7 +74,7 @@
 
 			<!-- Modal -->
 				<div class="modal fade" style="top: 20%" id="FiveG" role="dialog">
-					<div class="modal-dialog">
+					<div class="modal-dialog modal-lg">
 				        <!-- Modal content-->
 						<div class="modal-content">
 							<div class="modal-header">
@@ -82,14 +82,14 @@
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 							<div class="modal-body">
-								<p>Some text in the modal.</p>
+								<p></p>
 							</div>
 						</div>
 					</div>
 				</div>
 				
-				<div class="modal fade" style="top: 20%" id="IoT_Security" role="dialog">
-					<div class="modal-dialog">
+				<div class="modal fade" style="top: 15%" id="IoT_Security" role="dialog">
+					<div class="modal-dialog modal-lg">
 				        <!-- Modal content-->
 						<div class="modal-content">
 							<div class="modal-header">
@@ -97,19 +97,30 @@
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 							<div class="modal-body">
-								<p>針對物聯網與嵌入式系統環境，進行系統安全的研究12123123123123123123</p>
-								<p></p>
+								<p>
+									<span>針對物聯網與嵌入式系統單晶片，進行系統安全的研究。</span>
+									<p></p>
+									<span>在這個主題，首先要熟悉基本的 C 語言、作業系統 (Linux) 與密碼學相關的知識，並會接觸到大型的開源專案，進一步學會改寫專案的原始碼與 Makefile，並在專案上開發應用程式，甚至是撰寫 device driver 和 file system 等等 IC Design 公司所需要的系統技術。</span>
+									<p></p>
+									<span>我們目前研究的方向為嵌入式系統的 TEE (Trusted Execution Environment)，也就是 ARM TrustZone，此技術已套用在手機、車載晶片或物聯網裝置上，現今許多手機 OEM 與晶片大廠 (三星、高通、聯發科、新思) 都有引入。</span>
+									<p></p>
+									<ul>
+										<li>TEE (Trusted Execution Environment, <a href="https://www.twblogs.net/a/5b7cd3b12b71770a43dcc356" target="_blank">中文介紹</a>)</li>
+										<li>ARM TrustZone <a href="https://www.trustonic.com/news/technology/what-is-trustzone/" target="_blank">(技術簡介)</a></li>
+										<li>主要開源專案：OP-TEE (<a href="https://github.com/OP-TEE" target="_blank">GitHub 連結</a>, <a href="https://optee.readthedocs.io/en/latest/general/about.html" target="_blank">官方說明文件</a>)</li>
+									</ul>
+								</p>								
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="modal fade" style="top: 20%" id="Satellite" role="dialog">
-					<div class="modal-dialog">
+					<div class="modal-dialog modal-lg">
 				        <!-- Modal content-->
 						<div class="modal-content">
 							<div class="modal-header">
-								<h4 class="modal-title">5th Generation Mobile Networks</h4>
+								<h4 class="modal-title">Satellite Networks</h4>
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 							<div class="modal-body">
@@ -120,15 +131,20 @@
 				</div>
 
 				<div class="modal fade" style="top: 20%" id="Others" role="dialog">
-					<div class="modal-dialog">
+					<div class="modal-dialog modal-lg">
 				        <!-- Modal content-->
 						<div class="modal-content">
 							<div class="modal-header">
-								<h4 class="modal-title">5th Generation Mobile Networks</h4>
+								<h4 class="modal-title">Other Network Technologies</h4>
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 							<div class="modal-body">
-								<p>Some text in the modal.</p>
+								<p>
+									<ul>
+										<li>AIoT</li>
+										<li>LoRa</li>
+									</ul>
+								</p>	
 							</div>
 						</div>
 					</div>

@@ -82,4 +82,10 @@
 
 		}
 
+		$("button").hover(function(){
+    			$(this).children("span").addClass("accent5");
+		},function(){
+    			$(this).children("span").removeClass("accent5");
+		});
+
 })(jQuery);
