@@ -9,7 +9,7 @@
 		<title>中央大學高速通訊與計算實驗室</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />		
 		<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css">
@@ -22,9 +22,9 @@
 					<h1><a href="index.html">國立中央大學  高速通訊與計算實驗室</a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html#professor">About</a></li>
+							<li><a href="index.html#professor">Professor</a></li>
 							<li><b>Research</b></li>
-							<li><a href="index.html">Publication</a></li>
+							<li><a href="publication.html">Publication</a></li>
 							<li><a href="member.html">Member</a></li>
 						</ul>
 					</nav>
@@ -33,41 +33,38 @@
 			<!-- Banner -->
 				<section id="banner">
 					<h3 id="show_header" style="font-family:Microsoft JhengHei;">National Central University</h3>
-					<h2 style="font-family:Microsoft JhengHei;">High Speed Communication and Computing Lab</h2>
+					<h2 style="font-family:Microsoft JhengHei;">High-Speed Communication and Computing Lab</h2>
 				</section>
 
 			<!-- Main -->
 				<section id="main" class="container">
 
-					<section class="box special">
+					<section class="box special features">
 						<header class="major">
 							<h2>研究領域</h2>
-							<p>...</p>
+							<h4>請點選圓形圖示</h4>
 						</header>
-					</section>
-
-					<section class="box special features">
 						<div class="features-row">
 							<section>
-								<span class="icon major fa-wifi accent4"></span>
-								<h3>5th Generation Mobile Networks</h3>
+								<button type="button" style="background-color: #ffffff; border: none;" class="" data-toggle="modal" data-target="#FiveG"><span class="icon major fa-wifi accent4"></span></button>
+								<br><br><h3>5th Generation Mobile Networks</h3>
 								<p></p>
 							</section>
 							<section>
-								<span class="icon major fa-lock accent2"></span>
-								<h3>IoT Security</h3>
+								<button type="button" style="background-color: #ffffff; border: none;" class="" data-toggle="modal" data-target="#IoT_Security"><span class="icon major fa-lock accent2"></span></button>
+								<br><br><h3>IoT Security</h3>
 								<p></p>
 							</section>
 						</div>
 						<div class="features-row">
 							<section>
-								<span class="icon major fa-rocket accent5"></span>
-								<h3>Satellite Network</h3>
+								<button type="button" style="background-color: #ffffff; border: none;" class="" data-toggle="modal" data-target="#Satellite"><span class="icon major fa-rocket accent5"></span></button>
+								<br><br><h3>Satellite Networks</h3>
 								<p></p>
 							</section>							
 							<section>
-								<span class="icon major fa-cloud accent1"></span>
-								<h3>Other Network Technologies</h3>
+								<button type="button" style="background-color: #ffffff; border: none;" class="" data-toggle="modal" data-target="#Others"><span class="icon major fa-cloud accent1"></span></button>
+								<br><br><h3>Other Network Technologies</h3>
 								<p></p>
 							</section>
 
@@ -75,10 +72,72 @@
 					</section>
 				</section>
 
+			<!-- Modal -->
+				<div class="modal fade" style="top: 20%" id="FiveG" role="dialog">
+					<div class="modal-dialog">
+				        <!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">5th Generation Mobile Networks</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<p>Some text in the modal.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal fade" style="top: 20%" id="IoT_Security" role="dialog">
+					<div class="modal-dialog">
+				        <!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">IoT/Embedded Systems Security</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<p>針對物聯網與嵌入式系統環境，進行系統安全的研究12123123123123123123</p>
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" style="top: 20%" id="Satellite" role="dialog">
+					<div class="modal-dialog">
+				        <!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">5th Generation Mobile Networks</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<p>Some text in the modal.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" style="top: 20%" id="Others" role="dialog">
+					<div class="modal-dialog">
+				        <!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">5th Generation Mobile Networks</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<p>Some text in the modal.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="copyright">
-						<li>All rights reserved. NCU High Speed Communication and Computing Lab. 2020</li>
+						<li>All rights reserved. NCU High-Speed Communication and Computing Lab. 2020</li>
 						<li>Edit: P.C.Lai</li>
 					</ul>
 				</footer>
@@ -86,13 +145,16 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<!--<script src="assets/js/jquery.min.js"></script>-->
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	</body>
 </html>
