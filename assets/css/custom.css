@@ -8,116 +8,125 @@ body {
 
 /* Box */
 
-	.box-prof {
-		background: #fff;
-		border-radius: 6px;
-		box-shadow: 0 0 0 0 #e5e5e5;
-		margin: 0 0 2em 0;
-		padding: 3em;
+.box-prof {
+	background: #fff;
+	border-radius: 6px;
+	box-shadow: 0 0 0 0 #e5e5e5;
+	margin: 0 0 2em 0;
+	padding: 3em;
+}
+
+	.box-prof > :last-child {
+		margin-bottom: 0;
 	}
 
-		.box-prof > :last-child {
-			margin-bottom: 0;
+	.box-prof.alt {
+		background: none !important;
+		border-radius: 0 !important;
+		box-shadow: none !important;
+		margin: 0 0 2em 0;
+		padding: 0 !important;
+	}
+
+	.box-prof.features .features-row {
+		border-top: solid 2px #e5e5e5;
+		position: relative;
+	}
+
+		.box-prof.features .features-row:after {
+			clear: both;
+			content: '';
+			display: block;
 		}
 
-		.box-prof.alt {
-			background: none !important;
-			border-radius: 0 !important;
-			box-shadow: none !important;
-			margin: 0 0 2em 0;
-			padding: 0 !important;
+		.box-prof.features .features-row section {
+			float: left;
+			padding: 3em;
+			width: 50%;
 		}
 
-		.box-prof.features .features-row {
-			border-top: solid 2px #e5e5e5;
-			position: relative;
+			.box-prof.features .features-row section :last-child {
+				margin-bottom: 0;
+			}
+
+			.box-prof.features .features-row section:nth-child(2n) {
+				padding-right: 0;
+			}
+
+				.box-prof.features .features-row section:nth-child(2n):before {
+					background: #e5e5e5;
+					content: '';
+					display: block;
+					height: 100%;
+					margin-left: -3em;
+					position: absolute;
+					top: 0;
+					width: 2px;
+				}
+
+			.box-prof.features .features-row section:nth-child(2n-1) {
+				padding-left: 0;
+			}
+
+		.box-prof.features .features-row:first-child {
+			border-top: 0;
 		}
 
-			.box-prof.features .features-row:after {
-				clear: both;
-				content: '';
-				display: block;
+			.box-prof.features .features-row:first-child section {
+				padding-top: 0;
 			}
 
-			.box-prof.features .features-row section {
-				float: left;
-				padding: 3em;
-				width: 50%;
-			}
+		.box-prof.features .features-row:last-child {
+			padding-bottom: 0;
+		}
 
-				.box-prof.features .features-row section :last-child {
-					margin-bottom: 0;
-				}
-
-				.box-prof.features .features-row section:nth-child(2n) {
-					padding-right: 0;
-				}
-
-					.box-prof.features .features-row section:nth-child(2n):before {
-						background: #e5e5e5;
-						content: '';
-						display: block;
-						height: 100%;
-						margin-left: -3em;
-						position: absolute;
-						top: 0;
-						width: 2px;
-					}
-
-				.box-prof.features .features-row section:nth-child(2n-1) {
-					padding-left: 0;
-				}
-
-			.box-prof.features .features-row:first-child {
-				border-top: 0;
-			}
-
-				.box-prof.features .features-row:first-child section {
-					padding-top: 0;
-				}
-
-			.box-prof.features .features-row:last-child {
+			.box-prof.features .features-row:last-child section {
 				padding-bottom: 0;
 			}
 
-				.box-prof.features .features-row:last-child section {
-					padding-bottom: 0;
-				}
+	.box-prof.special {
+		text-align: center;
+	}
 
-		.box-prof.special {
-			text-align: center;
-		}
+	.box-prof .image.featured {
+		border-radius: 0;
+		display: block;
+		margin: 3em 0 3em -3em;
+		position: relative;
+		width: calc(100% + 6em);
+	}
 
-		.box-prof .image.featured {
+		.box-prof .image.featured img {
 			border-radius: 0;
 			display: block;
-			margin: 3em 0 3em -3em;
-			position: relative;
-			width: calc(100% + 6em);
+			width: 100%;
 		}
 
-			.box-prof .image.featured img {
-				border-radius: 0;
-				display: block;
-				width: 100%;
-			}
+		.box-prof .image.featured:first-child {
+			border-radius: 6px 6px 0 0;
+			margin-bottom: 3em;
+			margin-top: -3em;
+		}
 
-			.box-prof .image.featured:first-child {
+			.box-prof .image.featured:first-child img {
 				border-radius: 6px 6px 0 0;
-				margin-bottom: 3em;
-				margin-top: -3em;
 			}
 
-				.box-prof .image.featured:first-child img {
-					border-radius: 6px 6px 0 0;
-				}
+		.box-prof .image.featured:last-child {
+			border-radius: 0 0 6px 6px;
+			margin-bottom: -3em;
+			margin-top: 3em;
+		}
 
-			.box-prof .image.featured:last-child {
+			.box-prof .image.featured:last-child img {
 				border-radius: 0 0 6px 6px;
-				margin-bottom: -3em;
-				margin-top: 3em;
 			}
 
-				.box-prof .image.featured:last-child img {
-					border-radius: 0 0 6px 6px;
-				}
+img {
+	object-fit: contain;
+}
+
+.semester {
+	font-family: 'Roboto', sans-serif;
+}
+			
