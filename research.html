@@ -48,34 +48,49 @@
 						</header>
 						<div class="features-row">
 							<section>
-								<button type="button" style="background-color: #ffffff; border: none;" class="" data-toggle="modal" data-target="#FiveG"><span class="icon major fa-wifi accent1"></span></button>
-								<br><br><h3>5th Generation Mobile Networks</h3>
+								<button id="btn_FiveG" class="" style="background-color: #ffffff; border: none; cursor: pointer;"  data-toggle="modal" data-target="#FiveG">
+									<span class="icon major fa-wifi accent1" style="cursor: pointer;"></span>
+								</button>
+								<br>
+								<br>
+								<h3>5th Generation Mobile Networks</h3>
 								<p></p>
 							</section>
 							<section>
-								<button type="button" style="background-color: #ffffff; border: none;" class="" data-toggle="modal" data-target="#IoT_Security"><span class="icon major fa-lock accent2"></span></button>
-								<br><br><h3>IoT Security</h3>
+								<button id="btn_IoT_Security"  style="background-color: #ffffff; border: none; cursor: pointer;" data-toggle="modal" data-target="#IoT_Security">
+									<span class="icon major fa-lock accent2" style="cursor: pointer;"></span>
+								</button>
+								<br>
+								<br>
+								<h3>IoT Security</h3>
 								<p></p>
 							</section>
 						</div>
 						<div class="features-row">
 							<section>
-								<button type="button" style="background-color: #ffffff; border: none;" class="" data-toggle="modal" data-target="#Satellite"><span class="icon major fa-rocket accent3"></span></button>
-								<br><br><h3>Satellite Networks</h3>
+								<button id="btn_Satellite" class="" style="background-color: #ffffff; border: none; cursor: pointer;" data-toggle="modal" data-target="#Satellite">
+									<span class="icon major fa-rocket accent3" style="cursor: pointer;"></span>
+								</button>
+								<br>
+								<br>
+								<h3>Satellite Networks</h3>
 								<p></p>
 							</section>							
 							<section>
-								<button type="button" style="background-color: #ffffff; border: none;" class="" data-toggle="modal" data-target="#Others"><span class="icon major fa-cloud accent4"></span></button>
-								<br><br><h3>Other Network Technologies</h3>
+								<button id="btn_Others" class="" style="background-color: #ffffff; border: none; cursor: pointer;" data-toggle="modal" data-target="#Others">
+									<span class="icon major fa-cloud accent4" style="cursor: pointer;"></span>
+								</button>
+								<br>
+								<br>
+								<h3>Other Network Technologies</h3>
 								<p></p>
 							</section>
-
 						</div>
 					</section>
 				</section>
 
 			<!-- Modal -->
-				<div class="modal fade" style="top: 20%" id="FiveG" role="dialog">
+				<div id="FiveG" class="modal fade" style="top: 20%" role="dialog">
 					<div class="modal-dialog modal-lg">
 				        <!-- Modal content-->
 						<div class="modal-content">
@@ -100,7 +115,7 @@
 					</div>
 				</div>
 				
-				<div class="modal fade" style="top: 15%" id="IoT_Security" role="dialog">
+				<div id="IoT_Security" class="modal fade" style="top: 15%"  role="dialog">
 					<div class="modal-dialog modal-lg">
 				        <!-- Modal content-->
 						<div class="modal-content">
@@ -127,7 +142,7 @@
 					</div>
 				</div>
 
-				<div class="modal fade" style="top: 20%" id="Satellite" role="dialog">
+				<div id="Satellite" class="modal fade" style="top: 20%" role="dialog">
 					<div class="modal-dialog modal-lg">
 				        <!-- Modal content-->
 						<div class="modal-content">
@@ -153,7 +168,7 @@
 					</div>
 				</div>
 
-				<div class="modal fade" style="top: 20%" id="Others" role="dialog">
+				<div id="Others" class="modal fade" style="top: 20%" role="dialog">
 					<div class="modal-dialog modal-lg">
 				        <!-- Modal content-->
 						<div class="modal-content">
@@ -216,6 +231,25 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+			<!--<script>
+				//fiveG IoT Satellite Other
+				var fiveG = document.getElementById("fiveG");
+				var IoT = document.getElementById("IoT");
+				var Satellite = document.getElementById("Satellite");
+				var Other = document.getElementById("Other");
+
+				fiveG.addEventListener("mouseenter", mouseEnter);
+				fiveG.addEventListener("mouseleave", mouseLeave);
+				
+				
+				function mouseEnter() {
+					fiveG.style.cursor = "pointer";
+				}
+				
+				function mouseLeave() {
+					fiveG.style.cursor = "default";
+				}
+			</script>-->
 
 	</body>
 </html>
